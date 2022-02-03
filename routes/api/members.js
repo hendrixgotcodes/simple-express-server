@@ -18,4 +18,9 @@ router.get('/:id',(req, res)=>{
     res.json(members[req.params.id-1])
 })
 
+//Create members
+router.post('/', (req, res)=>{
+    res.send(req.body)
+})
+
 module.exports = router
